@@ -10,6 +10,9 @@
 ### 虚拟化技术
 1. 使用二进制翻译的全虚拟化（Full Virtualization using Binary Translation）
 <img src="assets/001.png" height=200>  
+虚拟机管理程序（VMM）就是负责客户操作系统和内核交互的驱动程序，运行在Ring0上，以驱动程序的形式体现。  
+当客户操作系统执行特权指令时，会触发异常，VMM捕获这个异常，在异常处翻译、模拟，返回处理结构到客户操作系统内。客户操作系统认为自己的特权指令工作正常，继续运行。
+
 2. 操作系统辅助或半虚拟化（OS Assisted Virtualization or Paravirtualization）
 <img src="assets/001.png" height=200>  
 3. 硬件辅助的虚拟化（Hardware Assisted Virtualization）  
