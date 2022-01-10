@@ -15,6 +15,7 @@
 
 2. 操作系统辅助或半虚拟化（OS Assisted Virtualization or Paravirtualization）
 <img src="assets/001.png" height=200>  
+
 3. 硬件辅助的虚拟化（Hardware Assisted Virtualization）  
 <img src="assets/001.png" height=200>  
 Intel的VT-x和AMD的AMD-V技术提供了新的CPU特性，使得VMM可以运行在ring0模式之下
